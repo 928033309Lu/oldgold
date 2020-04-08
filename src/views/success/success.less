@@ -1,0 +1,64 @@
+
+.particles-js {
+    background-size: cover;
+    .position(position,0px,0px);
+    .size(100%,100%);
+}
+.login.active{
+  top:-100%;
+  .transition(1s);
+}
+
+.login {
+    top:0px;
+    .size(100%,100%);
+    position: relative;
+  .box{
+    .size(100%,100%);
+    background:#f0f0f0 url(../../images/cloud.png) repeat-x bottom;
+    background-size:100% 270px;
+    overflow:hidden;
+    position: relative;
+      .icoBox{
+        width:439px;
+        height:267px;
+        background:url(../../images/success.png);
+        margin:100px auto;
+        position: relative;
+        p{
+          position: absolute;
+          top:65px;
+          left:135px;
+          font-size:26px;
+          font-weight:bold;
+          color:#14C63E;
+          position:absolute;
+
+        }
+        a{
+          width:98px;
+          height:40px;
+          background:#FFE8C3;
+          color:#FC6806;
+          font-size:18px;
+          text-align: center;
+          line-height:40px;
+          position: absolute;
+          bottom:45px;
+          left:140px;
+          text-decoration: none;
+          border-radius: 40px;
+        }
+      }
+    }
+
+}
+
+
+
+.el-popper[x-placement^=bottom]{
+  margin:0px !important;
+}
+.el-select-dropdown{
+  margin:0px !important;
+}

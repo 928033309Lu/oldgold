@@ -1,0 +1,193 @@
+@primary-color: #33C86F;
+*{margin:0px;padding:0px;}
+
+.menu-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  .item{
+    width:45px;
+    height:auto !important;
+    line-height:auto !important;
+    border-radius:30px;
+    background:rgba(25,28,54,0.6);
+    margin-bottom:4px;
+    //overflow:hidden;
+    color:@cWhite;
+    h2{
+      .size(45px,45px);
+      border-radius:30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 45px;
+      color: @primary-color;
+      font-size:22px;
+      transition: all .5s ease 0s;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      &:hover {
+        background: rgba(51,200,111,0.7);
+        color: #D4EFF6;
+      }
+    }
+    ul{
+      display:none;
+      list-style:none;
+      li{
+        .size(45px,45px);
+        font-size:10px;
+        display:block;
+        text-align:center;
+        cursor: pointer;
+      }
+      li.pw{
+        line-height:16px;
+        margin-top:5px;
+        font-size:40px;
+      }
+      li.logout{
+        height:55px;
+        margin-top:-20px !important;
+        font-size:19px;
+      }
+      li:hover{
+        color:@cGreen3;
+      }
+    }
+  }
+
+  .locationItem {
+    width:45px;
+    height:auto !important;
+    line-height:auto !important;
+    border-radius:30px !important;
+    margin-bottom:4px;
+    background:rgba(25,28,54,0.6);
+    overflow:auto;
+    color:@cWhite;
+    h2{
+      .size(45px,45px);
+      border-radius:30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 45px;
+      color: RGBA(47, 255, 47, 1);
+      font-size:28px;
+      &:hover {
+        background: rgba(51,200,111,0.7);
+        color: #D4EFF6;
+      }
+    }
+  }
+  .originalFile{
+    width:45px;
+    height:auto !important;
+    line-height:auto !important;
+    border-radius:30px !important;
+    margin-bottom:4px;
+    background:rgba(25,28,54,0.6);
+    overflow:auto;
+    color:@cWhite;
+    h2{
+      .size(45px,45px);
+      border-radius:30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 45px;
+      color: RGBA(47, 255, 47, 1);
+      font-size:22px;
+      &:hover {
+        background: @primary-color;
+        color: #D4EFF6;
+      }
+    }
+  }
+
+  .item.active{
+    ul{
+      display:block !important;
+      transition:1s;
+    }
+  }
+  .measuring{
+    position: relative;
+    h2{
+      color: rgba(47,255,47,1);
+      &:hover {
+        background: rgba(51,200,111,0.7);
+        color: rgba(240,252,255,1);
+      }
+    }
+    .measuring-tool{
+      h2{
+        color: rgba(240,252,255,1);
+        &:hover {
+          background: none!important;
+          color: rgba(47,255,47,1);
+        }
+      }
+    }
+    .measuringActive{
+      background-color: rgba(51,200,111,1);
+      color: rgba(240,252,255,1);
+    }
+    .fade-enter-active, .fade-leave-active {
+      transition: all .2s ease-in-out;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+      opacity: 0
+    }
+    .active{
+      color:rgba(47,255,47,1) !important;
+    }
+  }
+  .measuring-tool{
+    background-color: RGBA(25, 28, 54, 0.5);
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    width: 225px;
+    height: 45px;
+    left: 45px;
+    top: 0;
+    display: flex;
+    .antiCircle{
+      background: RGBA(25, 28, 54, 0.5);
+      background: radial-gradient(circle at left, transparent 22.5px, RGBA(25, 28, 54, 0.5) 0) left;
+      background-repeat: no-repeat;
+      width:22.5px;
+      height:45px;
+      position: absolute;
+      left: -22.5px;
+      pointer-events:none;
+    }
+    .measuring-close{
+      background-color: RGBA(21, 38, 79, 0.5);
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: -12px;
+      right: -3px;
+      border-radius: 50%;
+      color: RGBA(240, 252, 255, 1);
+      &:hover{
+        color: #2fff2f;
+      }
+      .icon{
+        position: absolute;
+        width: 20px;
+        left: 3px;
+        top: -2px;
+      }
+    }
+  }
+}
+.menu-container .gongju,.menu-container .xiangmu{
+  height: 45px !important;
+}

@@ -1,0 +1,239 @@
+
+.particles-js {
+    background-size: cover;
+    .position(position,0px,0px);
+    .size(100%,100%);
+    z-index:10;
+}
+
+.el-select-dropdown__item.selected {
+  color: rgba(51,200,111,1);
+}
+.el-select .el-input .el-select__caret{
+  color: #999999;
+  font-size: 24px;
+  padding-left: 7px;
+}
+.register {
+    top:0px;
+    .size(100%,100%);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background:url(../../images/loginBg.jpg) no-repeat;
+    background-size:100% 100%;
+  &-head{
+    overflow:hidden;
+    .size(100%,100%);
+
+    .logo{
+      .size(146px,24px);
+      background:url(../../images/logo.png);
+      background-size:100% 100%;
+      .position(absolute,23px,25px);
+    }
+    .loginDiv{
+      z-index:999;
+      .position(absolute,50%,50%);
+      top:62%;
+      img{
+        .size(42px,21px);
+        .position(absolute,15px,112px);
+      }
+
+      .loginBtn{
+        .size(224px,49px);
+        background:@cGreen2;
+        border-radius: 25px 24px 24px 24px;
+        border:0px;
+        display:block;
+        line-height:49px;
+        text-align:center;
+        text-decoration:none;
+        position:absolute;
+        left:-112px;
+        cursor:pointer;
+        .fontStyle{
+          .position(absolute,0px,70px);
+          color:@cWhite;
+          font-weight: lighter;
+          font-family: "PingFang SC",STHeitiSC-Light,"Microsoft YaHei",sans-serif;
+        }
+      }
+      .loginBtn:hover{
+        background:rgba(51,200,111,.8);
+        color:@cWhite;
+        // 按钮渐变
+        transition: all 1s ease 0s;
+        -webkit-transition: all 1s ease 0s;
+        -moz-transition: all 1s ease 0s;
+        -ms-transition: all 1s ease 0s;
+        -o-transition: all 1s ease 0s;
+      }
+    }
+
+    .headTxt{
+      width:60%;
+      height:auto;
+      .position(absolute,50%,50%);
+      transform: translateY(-50%);
+      z-index:2;
+      img{
+        .size(100%,100%);
+        position: relative;
+        right:50%;
+        z-index:1;
+      }
+      .logTitle{
+        color:@cWhite;
+        line-height:49px;
+        text-align:center;
+        text-decoration:none;
+        position:absolute;
+        top:53%;
+        font-weight: lighter;
+        font-family: "PingFang SC",STHeitiSC-Light,"Microsoft YaHei",sans-serif;
+        left:-140px;
+        font-size: 16px;
+      }
+
+    }
+  }
+    .box{
+      .size(100%,130%);
+      background:#f0f0f0 url(../../images/cloud.png) repeat-x bottom;
+      background-size:100% 240px;
+      overflow:hidden;
+      position: relative;
+
+      .regTxt{
+        .size(200px,30px);
+        position:absolute;
+        font-size:14px;
+        top:30px;
+        right:38px;
+        text-align:right;
+        z-index: 9999;
+        a{
+          color:#05B04A;
+        };
+        a:focus { outline:none;};
+      }
+      .login-con{
+        margin:3% auto;
+        width: 537px;
+
+        .login-tip{display:none;}
+        .el-form-item__error{
+          display:block;
+          margin-top: 42px;
+          margin-left: 20px;
+          z-index: 1;
+        }
+        .el-form-item__content{
+          text-align:center;
+          .el-button{
+            .size(517px,64px);
+            background:none;
+            border-radius:70px;
+            border:0px;
+            font-size:18px;
+            border:1px solid rgba(20,198,62,1);
+            color:rgba(20,198,62,1);
+            margin-top:50px;
+            font-weight: lighter;
+            font-family: "PingFang SC",STHeitiSC-Light,"Microsoft YaHei",sans-serif;
+          }
+          .el-button:hover{
+            background:rgba(20,198,62,1);
+            color:#fff;
+            transition: all 1s ease 0s;
+            -webkit-transition: all 1s ease 0s;
+            -moz-transition: all 1s ease 0s;
+            -ms-transition: all 1s ease 0s;
+            -o-transition: all 1s ease 0s;
+          }
+        }
+
+        .el-card{
+          background:none;
+          box-shadow:none;
+          border:0px;
+          .el-card__header{
+            .fz(30px);
+            text-align:center;
+          }
+          .el-form-item__content .icon{
+            .position(absolute,24px,43px);
+            z-index:99;
+            font-size:24px;
+          }
+          .el-input__inner{
+            .size(517px,72px);
+            border:0px;
+            padding-left:141px;
+            background:rgba(255,255,255,.3);
+            //box-shadow:0px 5px 10px rgba(170,171,171,0.23);
+            color:#414040 !important;
+            margin-bottom:30px;
+            //-webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,.3) inset;
+          }
+          .el-input__inner:focus{
+            .size(517px,72px);
+            background:@cWhite;
+            border-radius: 2px;
+            box-shadow:12px 0px 21px rgba(170,171,171,0.23);
+            border:0px;
+            padding-left:141px;
+            //-webkit-box-shadow: 0 0 0px 1000px white inset;
+          }
+          .regBox{
+            .el-input__inner{
+              margin-bottom:18px;
+            }
+            p.text{
+              width:100%;
+              text-align: center;
+              font-size: 14px;
+              color: rgba(73,82,83,0.8);
+            }
+            .getCode{
+              width:147px;
+              height:72px;
+              background:#14C63E;
+              display:block;
+              text-align: center;
+              line-height: 72px;
+              position: absolute;
+              top:0px;
+              right:-20px;
+              color:#fff;
+              text-decoration: none;
+            }
+            .getCode:hover{
+              background:rgba(51,200,111,.8);
+              //color:#14C63E;
+              // 按钮渐变
+              transition: all 1s ease 0s;
+              -webkit-transition: all 1s ease 0s;
+              -moz-transition: all 1s ease 0s;
+              -ms-transition: all 1s ease 0s;
+              -o-transition: all 1s ease 0s;
+            }
+            .el-input__suffix{
+              top:-10px;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+.el-popper[x-placement^=bottom]{
+  margin:0px !important;
+}
+.el-select-dropdown{
+  margin:0px !important;
+}

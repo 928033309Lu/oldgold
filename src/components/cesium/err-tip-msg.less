@@ -1,0 +1,54 @@
+@import "../../styles/common";
+.tooltip{
+  position: absolute;
+  right: -72px;
+  top: -38px;
+  border-radius: 20px;
+  width: 295px;
+  height: 28px;
+  padding: 10px;
+  color: #33C86F;
+  line-height: 30px;
+  text-align: justify;
+  background: rgba(0, 24, 49, 1);
+  border: 1px dashed #D4EFF6;
+  opacity: 1;
+  z-index: 3001;
+  pointer-events: none;
+}
+.overlay {
+  pointer-events: none;
+}
+
+.tooltip:before{
+  box-sizing: content-box;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 51px;
+  right: 17px;
+  padding:0;
+  border-bottom:8px solid transparent;
+  border-top:8px solid rgba(0,24,49,0.7);
+  border-left:8px solid transparent;
+  border-right:8px solid transparent;
+  display: block;
+  content:'';
+  z-index: 2013;
+}
+.tooltip:after{
+  box-sizing: content-box;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50px;
+  right: 17px;
+  padding:0;
+  border-bottom:9px solid transparent;
+  border-top:9px solid #d4eff659;
+  border-left:9px solid transparent;
+  border-right:9px solid transparent;
+  display: block;
+  content:'';
+  z-index:2013
+}

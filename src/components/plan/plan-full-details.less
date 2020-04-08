@@ -1,0 +1,67 @@
+@primary-color: #33C86F;
+*{margin:0px;padding:0px;}
+
+.contentBox{
+  .planDetailHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 60px;
+    position: relative;
+    .title{
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+      color: RGBA(255, 255, 255, 1);
+    }
+    .button{
+      background-color: RGBA(51, 200, 111, 0.5);
+      width: 150px;
+      height: 30px;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 30px;
+      color: RGBA(255, 255, 255, 1);
+      text-align: center;
+      cursor: pointer;
+    }
+    .close{
+      position: absolute;
+      right: -40px;
+      cursor: pointer;
+      font-size: 28px!important;
+      line-height: 30px;
+      color: #909399;
+    }
+    .close:hover{
+      color: #fff;
+    }
+    .canshushezhi{
+      margin-right: 5px;
+      font-size: 18px;
+      vertical-align: -0.25em;
+    }
+    .fanhui{
+      padding-right: 5px;
+      font-size: 18px;
+    }
+    .lineAndCycle{
+      position: absolute;
+      height: 1px;
+      width: 83px;
+      background-color: rgba(212, 239, 246, 1);
+      top: 15px;
+      left: 95px;
+    }
+    .lineAndCycle::after{
+      position: absolute;
+      height: 4px;
+      width: 4px;
+      border-radius: 2px;
+      background-color: #d4eff6;
+      display: block;
+      content: '';
+      right: -2px;
+      top: -1.5px;
+    }
+  }
+}

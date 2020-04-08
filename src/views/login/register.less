@@ -1,0 +1,150 @@
+
+.particles-js {
+    background-size: cover;
+    .position(position,0px,0px);
+    .size(100%,100%);
+}
+.login.active{
+  top:-100%;
+  .transition(1s);
+}
+
+.login {
+    top:0px;
+    .size(100%,100%);
+    position: relative;
+    .box{
+      .size(100%,100%);
+      background:#f0f0f0 url(../../images/cloud.png) repeat-x bottom;
+      background-size:100% 270px;
+      overflow:hidden;
+      position: relative;
+
+      .regTxt{
+        .size(200px,30px);
+        position:absolute;
+        font-size:14px;
+        top:30px;
+        right:38px;
+        text-align:right;
+        a{
+          color:#05B04A;
+        }
+      }
+      .login-con{
+          margin:3% auto;
+          width: 560px;
+          // 注册按钮样式
+          .login-tip{display:none;}
+          .el-form-item__error{display:block;padding-top:40px;}
+          .el-form-item__content{
+            text-align:center;
+            .el-button{
+              .size(520px,50px);
+              background:none;
+              border-radius:70px;
+              border:0px;
+              font-size:14px;
+              border:1px solid rgba(20,198,62,1);
+              color:rgba(20,198,62,1);
+              margin-top:20px;
+            }
+            .el-button:hover{
+              background:rgba(20,198,62,1);
+              color:#fff;
+            }
+          }
+          // 表单样式
+          .el-card{
+            background:none;
+            box-shadow:none;
+            border:0px;
+            .el-card__header{
+              .fz(30px);
+              text-align:center;
+            }
+            .el-form-item__content .icon{
+              .position(absolute,24px,43px);
+              z-index:99;
+              font-size:24px;
+            }
+            .el-input__inner{
+              .size(517px,66px);
+              border:0px;
+              padding-left:141px;
+              background:rgba(255,255,255,.3);
+              box-shadow:0px 5px 10px rgba(170,171,171,0.23);
+              color:#414040 !important;
+              margin-bottom:30px;
+            }
+            .el-input__inner:focus{
+              .size(517px,66px);
+              background:@cWhite;
+              border-radius: 2px;
+              box-shadow:0px 12px 21px rgba(170,171,171,0.23);
+              border:0px;
+              padding-left:141px;
+            }
+            .regBox{
+              .el-input__inner{
+                margin-bottom:18px;
+              }
+              p.text{
+                width:100%;
+                text-align: center;
+              }
+              .getCode{
+                width:147px;
+                height:66px;
+                background:#14C63E;
+                display:block;
+                text-align: center;
+                line-height: 66px;
+                position: absolute;
+                top:0px;
+                right:0px;
+                color:#fff;
+                text-decoration: none;
+              }
+              .getCode:hover{
+                background:rgba(51,200,111,.8);
+                //color:#14C63E;
+                // 按钮渐变
+                transition: all 1s ease 0s;
+                -webkit-transition: all 1s ease 0s;
+                -moz-transition: all 1s ease 0s;
+                -ms-transition: all 1s ease 0s;
+                -o-transition: all 1s ease 0s;
+              }
+              .el-input__suffix{
+                top:-10px;
+              }
+            }
+          }
+      }
+    }
+
+  .swiper-container {
+    background:url(../../images/loginBg.jpg) no-repeat;
+    background-size:100% 100%;
+    .size(100%,100%);
+    .swiper-wrapper {
+      .size(100%,100%);
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        .size(100%,100%);
+        overflow:hidden;
+      }
+    }
+  }
+}
+
+
+
+.el-popper[x-placement^=bottom]{
+  margin:0px !important;
+}
+.el-select-dropdown{
+  margin:0px !important;
+}

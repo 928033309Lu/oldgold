@@ -1,0 +1,195 @@
+.home-container {
+  .size(100%,100%);
+  position: relative;
+  .main-menu {
+    .position(absolute,106px,20px);
+    .item{
+      .size(60px,60px);
+      border-radius:50%;
+      .fz(30px,58px);
+      margin-bottom:4px;
+      opacity:1;
+    }
+    .item{
+      opacity:1;
+    }
+  }
+  /* menu 动画开始 */
+  .menu-fade-enter-active {
+    transition: left 0.5s ease-in;
+  }
+  .menu-fade-leave-active {
+    transition: left 0.5s ease-out;
+  }
+  .menu-fade-enter, .menu-fade-leave-to{
+    left: -50px;
+  }
+  .menu-fade-leave, .menu-fade-enter-to{
+    left: 20px;
+  }
+  .plan-fade-enter-active {
+    transition: all .3s ease-in;
+  }
+  .plan-fade-leave-active {
+    transition: all .3s ease-out;
+  }
+  .plan-fade-enter, .plan-fade-leave-to{
+    opacity: 0;
+    transform: translateX(235px);
+  }
+  .plan-fade-leave, .plan-fade-enter-to{
+    left: 0px;
+    opacity: 1;
+  }
+  .plan-fade2-enter-active {
+    transition: all .3s;
+  }
+  .plan-fade2-leave-active {
+    transition: all .3s;
+  }
+  .plan-fade2-enter, .plan-fade2-leave-to{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  .plan-fade2-leave, .plan-fade2-enter-to{
+    top: 0px;
+    opacity: 1;
+  }
+  .detail-fade-enter-active {
+    transition: all .3s ease-in;
+  }
+  .detail-fade-leave-active {
+    transition: all .3s ease-out;
+  }
+  .detail-fade-enter, .detail-fade-leave-to{
+    opacity: 0;
+    transform: translateX(235px);
+  }
+  .detail-fade-leave, .detail-fade-enter-to{
+    right: 0px;
+    opacity: 1;
+  }
+  /* menu 动画结束 */
+
+
+  .logo{
+    .size(146px,24px);
+    .position(absolute,23px,25px);
+    background:url(../../images/logo2.png);
+    background-size:100% 100%;
+    z-index:99;
+  }
+  .showPj{
+    .size(450px,100%);
+    .el-dialog{
+      .size(100%,100%);
+      margin:0px !important;
+      margin-top:80px !important;
+    }
+  }
+  .nameAndSwitch{
+    display: flex;
+    color: white;
+    .position(absolute, 20px, 195px);
+    z-index: 1;
+    align-items: center;
+    height: 30px;
+  }
+  .currentProjectName{
+    display: block;
+    border-left: 1px solid #d4eff6;
+    height: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 20px;
+    //font-weight: bold;
+    font-family: MicrosoftYaHei;
+  }
+}
+
+
+//引导样式
+.bootLayer{
+  .size(100%,100%);
+  .position(absolute,0px,0px);
+  background:transparent;
+  z-index:999;
+  .bordrLayer{
+    .size(322px,65px);
+    position: absolute;
+    bottom:33px;
+    left:47%;
+    border:2px solid #33C86F;
+    img{
+      width: 100%;
+      height: 100%;
+      background: #021325;
+    }
+  }
+  .imageLayer{
+    .size(100%,100%);
+    .position(absolute,0px,0px);
+    background:rgba(0,0,0,.6);
+    img{
+      .size(260px,auto);
+      position: absolute;
+      bottom:120px;
+      left:50%;
+    }
+  }
+}
+.Ash{
+  opacity: 0.5!important;
+}
+.nameAndSwitch .Ayewu{
+  display: none !important;
+}
+.templateBox,.duibiBox{
+  position: relative;
+  z-index: 11;
+  margin-left: 10px;
+  cursor: pointer;
+  width:30px;
+  height:30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  background:rgba(249,250,253,0);
+  border:1px solid rgba(214,215,220,1);
+  border-radius: 50%;
+}
+.switchmyTip2{
+  position: absolute;
+  right: -20px;
+  top: -19px;
+  width: 60px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  color: #000;
+  padding: 2px 5px !important;
+  margin: 0 !important;
+  background: rgba(220, 241, 247, 0.6);
+  border-radius: 1px;
+  z-index: 99999;
+}
+.imgValueKmzBox{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  z-index: 999;
+  width:50%;
+  margin-left: -25%;
+}
+.imgValueKmzBox>span{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+.imgValueKmzBox img{
+  max-width: 100% !important;
+}
